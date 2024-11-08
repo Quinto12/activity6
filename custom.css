@@ -1,0 +1,126 @@
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #e8eaf6;
+    margin: 0;
+    padding: 0;
+}
+
+
+header {
+    color: #ffffff;
+    text-align: center;
+    background: linear-gradient(90deg, #3f51b5, #7986cb); 
+    height: 100px;
+    padding: 0 20px;
+}
+
+.naming {
+    padding-top: 30px;
+
+}
+.caption{
+    padding-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+header h1 {
+    padding-top: 25px;
+    margin: 0;
+}
+.side{
+    float: right;
+    width: 6.4%;
+    height: 813px;
+    background:linear-gradient(90deg, #3f51b5, #7986cb);
+
+}
+footer{
+   
+    width: 20px;
+    height: 20px;
+    background:linear-gradient(90deg, #3f51b5, #7986cb);
+}
+
+
+nav {
+    float: left;
+    width: 20%;
+    height: 810px;
+    background-color: #3949ab;
+    padding-top: 5px;
+    box-shadow: 5px 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.navigation li {
+    list-style: none;
+    padding: 5px;
+  
+}
+
+.navigation li h2 {
+    background-color: #5c6bc0; 
+    text-align: center;
+    color: #ffffff;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #ffffff; 
+    font-weight: bold;
+    background-color: #3f51b5;
+    padding: 10px;
+    display: flex;
+    border-radius: 2px;
+    transition: 0.3s ease;
+}
+
+.navigation li:hover {
+    background-color: #283593; 
+}
+
+.navigation li a:hover {
+    color: #f0f0f0;
+}
+
+.hello li h2{
+    padding-top: 5px;
+    padding-left: 25%;
+}
+
+
+article {
+    float: left;
+    width: 70%;
+    height: 775px;
+    padding: 20px;
+    background-color: #fcfaf9;
+    border-left: 8px solid #3f51b5;
+    box-shadow: -5px 0 10px rgba(0, 0, 0, 0.1);
+    color: #333333; 
+    line-height: 1.6;
+}
+
+.btn-group {
+    float: left;
+}
+
+
+@keyframes color {
+    0% { background-color: #fcfaf9; }
+    50% { background-color: #e8eaf6; }
+    100% { background-color: #fcfaf9; }
+}
+
+
+@media (max-width: 768px) {
+    nav, article {
+        width: 100%;
+        float: none;
+        height: auto;
+        box-shadow: none;
+        border-left: none;
+        border-top: 8px solid #3f51b5; 
+    }
+}
+

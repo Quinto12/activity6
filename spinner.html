@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+    <link rel="stylesheet" href="/resources/demos/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+    <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+    <script src="/resources/demos/external/jquery-mousewheel/jquery.mousewheel.js"></script>
+    <script>
+    $( function() {
+      var spinner = $( "#spinner" ).spinner();
+   
+      $( "#disable" ).on( "click", function() {
+        if ( spinner.spinner( "option", "disabled" ) ) {
+          spinner.spinner( "enable" );
+        } else {
+          spinner.spinner( "disable" );
+        }
+      });
+      $( "#destroy" ).on( "click", function() {
+        if ( spinner.spinner( "instance" ) ) {
+          spinner.spinner( "destroy" );
+        } else {
+          spinner.spinner();
+        }
+      });
+      $( "#getvalue" ).on( "click", function() {
+        alert( spinner.spinner( "value" ) );
+      });
+      $( "#setvalue" ).on( "click", function() {
+        spinner.spinner( "value", 5 );
+      });
+   
+      $( "button" ).button();
+    } );
+    </script>
+      
+</head>
+<header>
+    <h1>QUINTO ROY VINETH</h1>
+</header>
+<body>
+    <section>
+        <nav class="hello">
+            <li><h2>WIDGETS</h2></li>
+            <ul class="navigation">
+                        <li><a href="DASHBOARS.html">Accordion</a></li>
+                        <li><a href="AutoComplete.html">AutoComplete</a></li>
+                        <li><a href="button.html">Button</a></li>
+                        <li><a href="Checkboxradio.html">Checkboxradio</a></li>
+                        <li><a href="Controlgroup.html">Controlgroup</a></li>
+                        <li><a href="Datepicker.html">Datepicker</a></li>
+                        <li><a href="Dialog.html">Dialog</a></li>
+                        <li><a href="Menu.html">Menu</a></li>
+                        <li><a href="Progressbar.html">Progressbar</a></li>
+                        <li><a href="selectmenu.html">SelectMenu</a></li>
+                        <li><a href="slider.html">Slider</a></li>
+                        <li><a href="spinner.html">Spinner</a></li>
+                        <li><a href="tabs.html">Tabs</a></li>
+                        <li><a href="tootlip.html">Tooltip</a></li>
+           
+       
+       
+         </ul>
+        </nav>
+        
+ 
+         <article>
+            <h3 float="left" class="naming">SPINNER</h3>
+            <div class="caption">
+                <p>Enhance a text input for entering numeric values, with up/down buttons and arrow key handling.</p>
+            </div>
+            
+            <p>
+                <label for="spinner">Select a value:</label>
+                <input id="spinner" name="value">
+              </p>
+   
+              <p>
+                <button id="disable">Toggle disable/enable</button>
+                <button id="destroy">Toggle widget</button>
+              </p>
+   
+              <p>
+                <button id="getvalue">Get value</button>
+                <button id="setvalue">Set value to 5</button>
+              </p>
+ 
+         </article>
+         <div class="side">
+
+         </div>
+   
+      
+     </section>
+
+    
+</body>
+</html>

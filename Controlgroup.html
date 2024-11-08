@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="custom.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://code.jquery.com/ui/1.14.1/themes/base/jquery-ui.css">
+  <link rel="stylesheet" href="/resources/demos/style.css">
+  <style>
+    .ui-controlgroup-vertical {
+      width: 150px;
+    }
+    .ui-controlgroup.ui-controlgroup-vertical > button.ui-button,
+    .ui-controlgroup.ui-controlgroup-vertical > .ui-controlgroup-label {
+      text-align: center;
+    }
+    #car-type-button {
+      width: 120px;
+    }
+    .ui-controlgroup-horizontal .ui-spinner-input {
+      width: 20px;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://code.jquery.com/ui/1.14.1/jquery-ui.js"></script>
+  <script>
+  $( function() {
+    $( ".controlgroup" ).controlgroup()
+    $( ".controlgroup-vertical" ).controlgroup({
+      "direction": "vertical"
+    });
+  } );
+  </script>
+</head>
+<header>
+    <h1>QUINTO ROY VINETH</h1>
+</header>
+<body>
+    <section>
+        <nav class="hello">
+            <li><h2>WIDGETS</h2></li>
+         <ul class="navigation">
+            <li><a href="DASHBOARS.html">Accordion</a></li>
+            <li><a href="AutoComplete.html">AutoComplete</a></li>
+            <li><a href="button.html">Button</a></li>
+            <li><a href="Checkboxradio.html">Checkboxradio</a></li>
+            <li><a href="Controlgroup.html">Controlgroup</a></li>
+            <li><a href="Datepicker.html">Datepicker</a></li>
+            <li><a href="Dialog.html">Dialog</a></li>
+            <li><a href="Menu.html">Menu</a></li>
+            <li><a href="Progressbar.html">Progressbar</a></li>
+            <li><a href="selectmenu.html">SelectMenu</a></li>
+            <li><a href="slider.html">Slider</a></li>
+            <li><a href="spinner.html">Spinner</a></li>
+            <li><a href="tabs.html">Tabs</a></li>
+            <li><a href="tootlip.html">Tooltip</a></li>
+           
+       
+       
+         </ul>
+        </nav>
+        
+ 
+         <article>
+        
+            <h3 float="left" class="naming">CONTROL GROUP</h3>
+            <div class="caption">
+                <p>Groups multiple buttons and other widgets into one visual set.</p>
+            </div>
+            <div class="widget">
+                <h1>Controlgroup</h1>
+                <fieldset>
+                  <legend>Rental Car</legend>
+                  <div class="controlgroup">
+                    <select id="car-type">
+                      <option>Compact car</option>
+                      <option>Midsize car</option>
+                      <option>Full size car</option>
+                      <option>SUV</option>
+                      <option>Luxury</option>
+                      <option>Truck</option>
+                      <option>Van</option>
+                    </select>
+                    <label for="transmission-standard">Standard</label>
+                    <input type="radio" name="transmission" id="transmission-standard">
+                    <label for="transmission-automatic">Automatic</label>
+                    <input type="radio" name="transmission" id="transmission-automatic">
+                    <label for="insurance">Insurance</label>
+                    <input type="checkbox" name="insurance" id="insurance">
+                    <label for="horizontal-spinner" class="ui-controlgroup-label"># of cars</label>
+                    <input id="horizontal-spinner" class="ui-spinner-input">
+                    <button>Book Now!</button>
+                  </div>
+                </fieldset>
+                <br>
+                <fieldset>
+                  <legend>Rental Car</legend>
+                  <div class="controlgroup-vertical">
+                    <select>
+                      <option>Compact car</option>
+                      <option>Midsize car</option>
+                      <option>Full size car</option>
+                      <option>SUV</option>
+                      <option>Luxury</option>
+                      <option>Truck</option>
+                      <option>Van</option>
+                    </select>
+                    <label for="transmission-standard-v">Standard</label>
+                    <input type="radio" name="transmission-v" id="transmission-standard-v">
+                    <label for="transmission-automatic-v">Automatic</label>
+                    <input type="radio" name="transmission-v" id="transmission-automatic-v">
+                    <label for="insurance-v">Insurance</label>
+                    <input type="checkbox" name="insurance" id="insurance-v">
+                    <label for="vertical-spinner" class="ui-controlgroup-label"># of cars</label>
+                    <input id="vertical-spinner" class="ui-spinner-input">
+                    <button id="book">Book Now!</button>
+                  </div>
+                </fieldset>
+              </div>
+               
+               
+          
+ 
+         </article>
+         <div class="side">
+
+         </div>
+   
+      
+     </section>
+
+    
+</body>
+</html>
